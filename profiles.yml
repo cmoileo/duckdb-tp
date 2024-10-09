@@ -1,0 +1,6 @@
+park:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: db.duckdb

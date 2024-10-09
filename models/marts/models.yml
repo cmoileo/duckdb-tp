@@ -1,0 +1,39 @@
+# models/models.yml
+version: 2
+
+models:
+  - name: exploit
+    description: "This table contains all exploitants"
+    columns:
+      - name: exploit
+        description: "Refers to exploitant id"
+        tests:
+          - not_null
+          - unique
+
+  - name: ta_type
+    description: "Type of pricing"
+    columns:
+      - name: ta_type
+        description: "Surrogate key for ta_type"
+        tests:
+          - not_null
+          - unique
+
+  - name: secteur
+    description: "Area in Bordeaux Métropole"
+    columns:
+      - name: secteur
+        description: "Surrogate key for area"
+        tests:
+          - not_null
+          - unique
+
+  - name: type
+    description: "Type of parking"
+    columns:
+      - name: type
+        description: "Surrogate key for type"
+        tests:
+          - not_null
+          - unique

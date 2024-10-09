@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: staging
+    schema: staging
+    tables:
+      - name: parking
+        description: "Table des données des parkings hors voirie brutes"

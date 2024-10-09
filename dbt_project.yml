@@ -1,0 +1,22 @@
+name: 'park'
+version: '1.0.0'
+config-version: 2
+
+profile: 'park'
+
+model-paths: ['models']
+
+test-paths: ['./park/tests']
+analysis-paths: ['./park/analyses']
+seed-paths: ['./park/seeds']
+macro-paths: ['./park/macros']
+snapshot-paths: ['./park/snapshots']
+
+models:
+  park:
+    marts:
+      +schema: marts
+      +materialized: table
+    staging:
+      +schema: staging
+      +materialized: view
